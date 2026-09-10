@@ -8,6 +8,11 @@
 }
 /* ------ */
 /* Start box */
+@media (max-width: 768px) {
+  .block-mobile {
+    display: block;
+  }
+}
 .flex {
   display: flex;
 }
@@ -16,6 +21,9 @@
 }
 .justify-between {
   justify-content: space-between;
+}
+.grid {
+  display: grid;
 }
 /* End box */
 
@@ -38,6 +46,12 @@
 .ml-10 {
   margin-left: 10px;
 }
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
 .m-20 {
   margin: 20px;
 }
@@ -46,6 +60,9 @@
 }
 .gap-5 {
   gap: 5px;
+}
+.gap-20 {
+  gap: 20px;
 }
 /* End padding + margin */
 
@@ -86,6 +103,11 @@
 .text-center {
   text-align: center;
 }
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+}
 .text-14 {
   font-size: 14px;
 }
@@ -93,5 +115,13 @@
 /* Start Screen */
 .w-full {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .md\:text-center {
+    text-align: center;
+  }
+  .md\:block {
+    display: block;
+  }
 }
 /* End Screen */
